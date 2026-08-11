@@ -1,0 +1,24 @@
+{
+  "name": "task_management_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devdeepakjha/Task_Management_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Devdeepakjha/Task_Management_API/issues"
+  },
+  "homepage": "https://github.com/Devdeepakjha/Task_Management_API#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
