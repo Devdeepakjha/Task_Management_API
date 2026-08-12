@@ -87,4 +87,27 @@ router.patch("/:id", (req, res) => {
   });
 });
 
+//DELETE
+router.delete("/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  if (!Number.isInteger(id) || id <= 0) {
+    return res.status(400).json({
+      error: "Invalid task ID",
+    });
+  }
+
+  const index = tasks.findIndex((task) => task.id === id);
+
+  if (index === -1) {
+    return res.status(404).json({
+      error: "Task not found",
+    });
+  }
+
+  tasks.splice(index, 1);
+
+  res.status(204).send();
+});
+
 export default router;
